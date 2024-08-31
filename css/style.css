@@ -23,7 +23,7 @@ table, th, td {
   font-family: 'Times New Roman', Times, serif;
 }
 
-.btn{
+.btn, sidebtn{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: rgb(4, 29, 56);
 }

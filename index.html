@@ -11,10 +11,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
+  
 </head>
 
-<body>
-    <nav id="nav" class="navbar navbar-expand-sm" style="height: 50px; background-color: darkcyan;">
+<body style="zoom: 90%">
+<style>
+
+.btn {
+background-color: #0dcaf0;
+}
+.sidebtn {
+ background-color: #0dcaf0;
+}
+</style>
+    <nav id="nav" class="navbar navbar-expand-sm" style="height: 50px; background-color: #0a99b6;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><strong class="text-white">BSNL PATHANAMTHITTA SSA</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -23,15 +33,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav" style="display: inline; justify-content: end;">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link special-home btn btn-info" href="#home"><strong
+                    <li class="nav-item"><a class="nav-link special-home btn-info" href="#home"><strong
                                 class="text-white">Home</strong></a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-info" href="#"><strong
+                    <li class="nav-item"><a class="nav-link btn-info" href="http://10.198.208.100/portal-web/"><strong
                                 class="text-white">BSS</strong></a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-info" href="#"><strong
+                    <li class="nav-item"><a class="nav-link btn-info" href="http://10.198.208.153:8000/oss/ "><strong
                                 class="text-white">OSS</strong></a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-info" href="#"><strong
+                    <li class="nav-item"><a class="nav-link  btn-info" href="https://erpportal.bsnl.co.in/irj/portal"><strong
                                 class="text-white">ERP</strong></a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-info" href="#"><strong
+                    <li class="nav-item"><a class="nav-link  btn-info" href="https://smaxems.cdrdc.bsnl.co.in/dashboard?TENANTID=147685179"><strong
                                 class="text-white">SMAX</strong></a></li>
                 </ul>
             </div>
@@ -43,7 +53,7 @@
                 <div class="d-inline-flex align-items-center text-white">
                     <a href="#" class="navbar-brand">
                         <h3 class="m-0  text-success">
-                            <img src="./images/Picsart_24-07-27_13-06-46-439.jpg" alt="" height="190px" width="223%">
+                            <img src="./images/Picsart_24-07-27_13-06-46-439.jpg" alt="" height="190px" width="220%">
                         </h3>
                     </a>
                 </div>
@@ -62,10 +72,13 @@
                         </button>
                         <ul class="dropdown-menu" style="background-color: rgb(165, 222, 134);"
                             aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#"><strong>BSS & PMS</strong></a>
-                            <a class="dropdown-item" href="#"><strong>OSS</strong></a>
-                            <a class="dropdown-item" href="#"><strong>SMAX</strong></a>
-                            <a class="dropdown-item" href="#"><strong>CDR P3 Studymaterials</strong></a>
+                            <a class="dropdown-item" href="http://10.198.208.100/portal-web/"><strong>BSS & PMS</strong></a>
+                            <a class="dropdown-item" href="http://10.198.208.153:8000/oss/ "><strong>OSS</strong></a>
+	            <a class="dropdown-item" href="http://10.198.208.153:8000/oss/ "><strong>DSCM</strong></a>
+                            <a class="dropdown-item" href="https://smaxems.cdrdc.bsnl.co.in/dashboard?TENANTID=147685179"><strong>SMAX</strong></a>
+                            <a class="dropdown-item" href="http://10.132.37.11:7071/"><strong>LDAP</strong></a>
+	            <a class="dropdown-item" href="https://wsc.cdr.bsnl.co.in/index"><strong>Self care portal (WSC)</strong></a>
+	            <a class="dropdown-item" href="#"><strong>CDR P3 Study Materials</strong></a>
                         </ul>
                     </li>
                     <li class="dropdown" style="display: inline-block;">
@@ -75,49 +88,81 @@
                         </button>
                         <ul class="dropdown-menu" style="background-color: rgb(128, 213, 91);"
                             aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#"><strong>Attendance Portal</strong></a>
-                            <a class="dropdown-item" href="#"><strong>Employee Selfcare</strong></a>
-                            <a class="dropdown-item" href="#"><strong>Kerala Intranet</strong></a>
-                            <a class="dropdown-item" href="#"><strong>Corporate Website</strong></a>
-                            <a class="dropdown-item" href="#"><strong>E-Office</strong></a>
+                            <a class="dropdown-item" href="http://10.201.217.100/circle/KL"><strong>Attendance Portal</strong></a>
+                            <a class="dropdown-item" href="http://eportal.erp.bsnl.co.in/irj/portal"><strong>BSNL ESS web</strong></a>
+                            <a class="dropdown-item" href="https://mail.bsnl.co.in/"><strong>BSNL E-mail</strong></a>
+                            <a class="dropdown-item" href="https://parichay.nic.in/pnv1/assets/login?sid=eOfficeBSNL"><strong>BSNL E-Office</strong></a>
+                            <a class="dropdown-item" href="https://omcweb.kl.bsnl.co.in/login"><strong>OMC web</strong></a>
+	            <a class="dropdown-item" href="https://oorja.bsnl.in/"><strong>Oorja Portal</strong></a>
+                            <a class="dropdown-item" href="http://10.44.0.125/"><strong>Kerala Circle Intranet</strong></a>
+                            <a class="dropdown-item" href="http://intranet.bsnl.co.in"><strong>Corporate Intranet</strong></a>
+                            <a class="dropdown-item" href="https://www.bsnl.co.in/"><strong>Corporate BSNL Web</strong></a>
+                            <a class="dropdown-item" href="http://10.193.219.73/"><strong>CFA Dashboard</strong></a>
+                        
                         </ul>
                     </li>
-                    <li style="display: inline-block;">
-                        <button class="btn btn-info" type="button">
-                            HINDI
+	    <li class="dropdown" style="display: inline-block;">
+                        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Mobile
                         </button>
+                        <ul class="dropdown-menu" style="background-color: rgb(128, 213, 91);"
+                            aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="http://10.19.238.34/"><strong>Sanchaarsoft</strong></a>
+                            <a class="dropdown-item" href="https://sancharaadhaar.bsnl.co.in/BSNLThinApp/PreLogin.do"><strong>Sanchaar Aadhaar</strong></a>
+                            <a class="dropdown-item" href="http://10.147.235.44:8080/ctopup/Mvoucher/"><strong>Pyro</strong></a>
+	            <a class="dropdown-item" href="http://10.32.240.198/ccm"><strong>CCM</strong></a>
+                        </ul>
                     </li>
-                    <li class="dropdown" style="display: inline-block;">
+	    <li class="dropdown" style="display: inline-block;">
+                        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Tariff
+                        </button>
+                        <ul class="dropdown-menu" style="background-color: rgb(128, 213, 91);"
+                            aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="https://portal2.bsnl.in/myportal/tariffs.do?FTTH_BROADBAND_COMBO"><strong>FTTH Tariff</strong></a>
+                            <a class="dropdown-item" href="https://portal2.bsnl.in/myportal/tariffs.do?PREPAID"><strong>Mobile Prepaid</strong></a>
+                            <a class="dropdown-item" href="https://bsnl.co.in/opencms/bsnl/BSNL/services/mobile/cellular_cellone_allplan.html"><strong>Mobile postpaid</strong></a>
+	            <a class="dropdown-item" href="https://portal2.bsnl.in/myportal/isdtariff.do"><strong>ISD Call Rate</strong></a>
+                        </ul>
+                    </li>
+	     <li class="dropdown" style="display: inline-block;">
                         <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                             Helpdesk
                         </button>
-                        <ul class="dropdown-menu" style="background-color: rgb(187, 116, 149);"
+                        <ul class="dropdown-menu" style="background-color: rgb(128, 213, 91);"
                             aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#"><strong>PTA Helpdesk</strong></a>
-                            <a class="dropdown-item" href="#"><strong>Mobile Helpdesk</strong></a>
-                            <a class="dropdown-item" href="#"><strong>LDAP</strong></a>
+                            <a class="dropdown-item" href="http://10.44.64.24/complaints/complaints.asp"><strong>PTA Helpdesk</strong></a>
+                            <a class="dropdown-item" href="http://10.44.64.24/complaintspublic/complaints_mob.asp"><strong>Mobile Helpdesk</strong></a>
+                            <a class="dropdown-item" href="http://10.201.218.50/"><strong>ERP Helpdesk</strong></a>
                         </ul>
                     </li>
                     <li style="display: inline-block;">
                         <button class="btn btn-info" type="button">
-                            DOWNLOADS
+                            <a class="dropdown-item" href="http://10.44.64.24/files/hindi/310323olhelplitjulylatest%2028.pdf"><strong>Hindi</strong></a>
                         </button>
                     </li>
                     <li style="display: inline-block;">
                         <button class="btn btn-info" type="button">
-                            People Finder
+                        <a class="dropdown-item" href="http://10.44.64.24/downloads.htm"><strong>Downloads</strong></a>
                         </button>
                     </li>
-                    <li style="display: inline-block;">
-                        <button class="btn btn-info" type="button">
-                            Online Attendance
+	     <li class="dropdown" style="display: inline-block;">
+                        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Other BSNL Links
                         </button>
-                    </li>
-                    <li style="display: inline-block;">
-                        <button class="btn btn-info" type="button">
-                            e-office
-                        </button>
+                        <ul class="dropdown-menu" style="background-color: rgb(165, 222, 134);"
+                            aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="http://10.44.4.52/login/"><strong>Sweekar portal</strong></a>
+                            <a class="dropdown-item" href="http://10.224.72.3/"><strong>ATOMS Portal</strong></a>
+	            <a class="dropdown-item" href="https://pgrms.bsnl.co.in/"><strong>PGRMS</strong></a>
+                            <a class="dropdown-item" href="https://bookmyfiber.bsnl.co.in/"><strong>Book my fiber</strong></a>
+                            <a class="dropdown-item" href="http://10.192.161.95/t2/"><strong>BSNL Transnet</strong></a>
+	            <a class="dropdown-item" href="http://10.192.209.231/"><strong>BSNL Training portal</strong></a>	       
+                        </ul>
                     </li>
                     <li style="display: inline-block;">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -130,11 +175,11 @@
     <!-- Header Start -->
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-9">
-                        <iframe src="./news.html" frameborder="0" style="width: 100%; height: 700px;"></iframe>
+                    <div class="col-lg-10">
+                        <iframe src="./news.html" frameborder="0" style="width: 100%; height: 900px;"></iframe>
                     </div>
-                    <div class="col-lg-3">
- 		<table class="login-table" style="background-color: #dbeaff; width: 180px;">
+                    <div class="col-lg-2">
+ 		<table class="login-table" style="background-color: #dbeaff; width: 380px;">
                         <tbody><tr>
                         <td bgcolor="#109ED6" bordercolor="#FFFFFF">
 
@@ -157,71 +202,56 @@
 			</td></tr></tbody></table>
                     <table class="lg-3 table" style="width: 15%;">
                         <tr>
-                            <td class="mb-1" style="background-color: white;"> 
+                            <td style="background-color: white;"> 
                                 <li class="dropdown" style="display: inline-block;">
+                                    <button class="btn sidebtn" type="button" aria-haspopup="true" aria-expanded="true">
+                                         <a class="dropdown-item" href="http://10.201.217.100/circle/KL"><strong>Online Attendance</strong></a>
+                                    </button>
+                                </li>
+		<li class="dropdown" style="display: inline-block;">
                                     <button class="btn sidebtn btn-info" type="button" aria-haspopup="true" aria-expanded="true">
-                                        Online Attendance
+                                         <a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/1yzSsvrUZOgWnVdJaOFPEuxfsYgAPrV2fUOI8LyBhipg/edit?gid=285327300#gid=285327300"><strong>Retention Cell Activities</strong></a>
                                     </button>
-                                </li> <br>
-                                <li class="dropdown" style="display: inline-block;">
-                                    <button class="btn sidebtn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                        BSNL E-office
-                                    </button>
-                                    <ul class="dropdown-menu" style="background-color: rgba(188, 174, 181, 0.929);"
-                                        aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#"><strong>BSNL Mail</strong></a>
-                                        <a class="dropdown-item" href="#"><strong>Kerala Circle Intranet</strong></a>
-                                        <a class="dropdown-item" href="#"><strong>BSNL ESS portal web</strong></a>
-                                        <a class="dropdown-item" href="#"><strong>BSNL ESS Intranet</strong></a>
-                                        <a class="dropdown-item" href="#"><strong>OMC Web</strong></a>
-                                        <a class="dropdown-item" href="#"><strong>Oorja portal</strong></a>
-                                        <a class="dropdown-item" href="#"><strong>People Finder</strong></a>
-                                    </ul>
                                 </li>
-                                <li class="dropdown" style="display: inline-block;">
-                                    <button class="btn sidebtn btn-success dropdown-toggle" type="button" id="dropdownMenuButton"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                        BSNL Links
+		<li class="dropdown" style="display: inline-block;">
+                                    <button class="btn sidebtn btn-info" type="button" aria-haspopup="true" aria-expanded="true">
+                                         <a class="dropdown-item" href="https://erpportal.bsnl.co.in/irj/portal"><strong>BSNL ESS portal</strong></a>
                                     </button>
-                                    <ul class="dropdown-menu" style="background-color: rgba(188, 174, 181, 0.929);"
-                                        aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#"><strong>Sanchaar soft</strong></a>
-                                        <a class="dropdown-item" href="#"><strong>Sanchaar aadhar</strong></a>
-                                        <a class="dropdown-item" href="#"><strong>Pyro</strong></a>
-                                        <a class="dropdown-item" href="#"><strong>BSNL Mail</strong></a>
-                                        <a class="dropdown-item" href="#"><strong>Oorja portal</strong></a>
-                                        <a class="dropdown-item" href="#"><strong>Kerala Circle Intranet</strong></a>
-                                        <a class="dropdown-item" href="#"><strong>BSNL Training portal</strong></a>
-                                        <a class="dropdown-item" href="#"><strong>BSNL ESS portal web</strong></a>
-                                        <a class="dropdown-item" href="#"><strong>BSNL ESS Intranet</strong></a>
-                                    </ul>
                                 </li>
-                                <li class="dropdown" style="display: inline-block;">
-                                    <button class="btn sidebtn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                        CDR Links
+		<li class="dropdown" style="display: inline-block;">
+                                    <button class="btn sidebtn btn-info" type="button" aria-haspopup="true" aria-expanded="true">
+                                         <a class="dropdown-item" href="https://parichay.nic.in/pnv1/assets/login?sid=eOfficeBSNL"><strong>BSNL E-Office</strong></a>
                                     </button>
-                                    <ul class="dropdown-menu" style="background-color: rgba(188, 174, 181, 0.929);"
-                                        aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#"><strong>BSS/PMS</strong></a>
-                                        <a class="dropdown-item" href="#"><strong>OSS</strong></a>
-                                        <a class="dropdown-item" href="#"><strong>DSCM</strong></a>
-                                        <a class="dropdown-item" href="#"><strong>SMAX</strong></a>
-                                        <a class="dropdown-item" href="#"><strong>EDRS</strong></a>
-                                        <a class="dropdown-item" href="#"><strong>LDAP</strong></a>
-                                    </ul>
                                 </li>
-                                <li class="dropdown" style="display: inline-block;">
-                                    <button class="btn sidebtn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                        Other BSNL Links
+		<li class="dropdown" style="display: inline-block;">
+                                    <button class="btn sidebtn btn-info" type="button" aria-haspopup="true" aria-expanded="true">
+                                         <a class="dropdown-item" href="https://mail.bsnl.co.in/"><strong>BSNL E-Mail</strong></a>
                                     </button>
-                                    <ul class="dropdown-menu" style="background-color: rgba(188, 174, 181, 0.929);"
-                                        aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#"><strong>Sweekar Portal (Circle AT)</strong></a>
-                                        <a class="dropdown-item" href="#"><strong>Book My fiber</strong></a>
-                                    </ul>
+                                </li>
+		<li class="dropdown" style="display: inline-block;">
+                                    <button class="btn sidebtn btn-info" type="button" aria-haspopup="true" aria-expanded="true">
+                                         <a class="dropdown-item" href="https://omcweb.kl.bsnl.co.in/login"><strong>OMC web</strong></a>
+                                    </button>
+                                </li>
+		<li class="dropdown" style="display: inline-block;">
+                                    <button class="btn sidebtn btn-info" type="button" aria-haspopup="true" aria-expanded="true">
+                                         <a class="dropdown-item" href="https://oorja.bsnl.in/"><strong>Oorja portal</strong></a>
+                                    </button>
+                                </li>
+		<li class="dropdown" style="display: inline-block;">
+                                    <button class="btn sidebtn btn-info" type="button" aria-haspopup="true" aria-expanded="true">
+                                         <a class="dropdown-item" href="http://10.44.0.125/"><strong>Kerala Circle Intranet</strong></a>
+                                    </button>
+                                </li>
+		<li class="dropdown" style="display: inline-block;">
+                                    <button class="btn sidebtn btn-info" type="button" aria-haspopup="true" aria-expanded="true">
+                                         <a class="dropdown-item" href="http://intranet.bsnl.co.in"><strong>Corporate Intranet</strong></a>
+                                    </button>
+                                </li>
+		<li class="dropdown" style="display: inline-block;">
+                                    <button class="btn sidebtn btn-info" type="button" aria-haspopup="true" aria-expanded="true">
+                                         <a class="dropdown-item" href="http://10.44.64.24:8080/peoplefinder/pplfinder.php"><strong>People Finder</strong></a>
+                                    </button>
                                 </li>
                             </td>
                         </tr>
