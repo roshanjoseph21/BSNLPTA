@@ -65,11 +65,13 @@ th, td {
   flex-direction: column;
 }
 .buttons button {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .sidebtn{
-  width: 300px;
+  width: 250px;
+ height: 35px;
+margin-bottom: 1px;
 }
 
 .dropdown{
